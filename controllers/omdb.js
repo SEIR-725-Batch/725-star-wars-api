@@ -8,11 +8,13 @@ const axios = require('axios');
 require('dotenv').config();
 const API_KEY = process.env.API_KEY
 
-router.get('/starwars', function(req, res) {
+router.get('/startrek', function(req, res) {
     const queryOptions = {
         params: {
-            s: 'star wars',
-            apikey: API_KEY
+            s: 'star trek',
+            apikey: API_KEY,
+            type: 'series',
+            season: 5
         }
     };
 
